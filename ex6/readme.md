@@ -1,6 +1,6 @@
 # IPC - kolejki komunikatów
 
-Przydatne funkcje:
+### Przydatne funkcje:
 
 #### System V:
 
