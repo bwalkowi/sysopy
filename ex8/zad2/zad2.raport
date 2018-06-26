@@ -1,0 +1,40 @@
+Raport z zadania 2:
+
+1a) Wysłanie sygnału do procesu gdy żaden wątek nie maskuje sygnału:
+
+   - SIGUSR1: wypisanie 'Sygnał użytkownika 1', zakończenie całego procesu;
+   - SIGTERM: wypisanie 'Zakończony', zakończenie całego procesu;
+   - SIGKILL: wypisanie 'Unicestwiony', zakończenie całego procesu;
+   - SIGSTOP: wypisanie standardowego komunikatu zatrzymania procesu, zatrzymanie procesu ;
+
+1b) Wysłanie sygnału do procesu gdy tylko główny wątek maskuje dany sygnał, a pozostałe nie:
+
+   - SIGUSR1: wypisanie 'Sygnał użytkownika 1', zakończenie całego procesu;
+   - SIGTERM: wypisanie 'Zakończony', zakończenie całego procesu;
+   - SIGKILL: nie dotyczy;
+   - SIGSTOP: nie dotyczy;
+
+1c) Wysłanie sygnału do procesu gdy wątek ma zainstalowaną niestandardową obsługę sygnału:
+
+   - SIGUSR1: tylko jeden z wątków odbiera sygnał, proces kontynuuje działanie;
+   - SIGTERM: tylko jeden z wątków odbiera sygnał, proces kontynuuje działanie;
+   - SIGKILL: nie dotyczy;
+   - SIGSTOP: nie dotyczy;
+
+1d) wysłanie sygnału do wątku blokującego sygnał:
+
+   - SIGUSR1: sygnał jest blokowany;
+   - SIGTERM: sygnał jest blokowany;
+   - SIGKILL: nie dotyczy;
+   - SIGSTOP: nie dotyczy;
+
+1e) wysłanie sygnału do wątku z zainstalowaną niestandardową obsługą sygnału:
+
+   - SIGUSR1: konkretny wątek obsługuje sygnał;
+   - SIGTERM: konkretny wątek obsługuje sygnał;
+   - SIGKILL: nie dotyczy;
+   - SIGSTOP: nie dotyczy;
+
+2) wykonanie dzielenia przez 0 w jednym z wątków:
+
+   Proces kończy swoje działanie.
