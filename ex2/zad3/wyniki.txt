@@ -1,0 +1,64 @@
+10000 elema,o4 tn size, sys
+real 17.33
+user 2.00
+sns 15.31
+10000 elems, 4 in size, lib
+real 5.24
+user 2.64
+sys o.58
+20000 elems, 4 in size, sys
+real 70.89
+user 8.02
+sys 62.82
+20000 elems, 4 in size, lib
+real 21.55
+user 11.02
+sys 10.50
+10000 elems, 512 in size, sys
+real 20.33
+user 2.02
+sys 18.28
+10000 elems, 512 in size, lib
+real 9.43
+user 3.29
+sys 6.12
+20000 elems, 512 in size, sys
+real 83.18
+user 8.36
+sys 74.76
+20000 elems, 512 in size, lib
+real 40.56
+user 12.09
+sys 28.42
+10000 elems, 4096 in size, sys
+real 22.92
+user 1.93
+sys 20.96
+10000 elems, 4096 in size, lib
+real 45.54
+user 5.21
+sys 40.30
+15000 elems, 4096 in size, sys
+real 52.54
+user 4.48
+sys 48.01
+15000 elems, 4096 in size, lib
+real 101.61
+user 11.55
+sys 90.01
+8000 elems, 8192in size, sys
+real 14.89
+user 1.17
+sys 13.70
+8000 elems, 8192 in size, lib
+real 29.59
+user 3.25
+sys 26.31
+12000 elems, 8192in size, sys
+real 34.55
+user 3.20
+sys 31.21
+12000 elems, 8192 in size, lib
+real 66.87
+user 7.68
+sys 59.14

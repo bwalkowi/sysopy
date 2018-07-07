@@ -1,0 +1,70 @@
+10000 elems, 4 in size, sys
+real 14.00
+user 2.13
+sys 11.20
+10000 elems, 4 in size, lib
+real 5.80
+user 2.81
+sys 2.63
+20000 elems, 4 in size, sys
+real 55.09
+user 8.84
+sys 44.09
+20000 elems, 4 in size, lib
+real 22.54
+user 10.85
+sys 10.82
+10000 elems, 512 in size, sys
+real 17.15
+user 2.20
+sys 13.90
+10000 elems, 512 in size, lib
+real 9.66
+user 3.35
+sys 5.91
+20000 elems, 512 in size, sys
+real 69.94
+user 8.95
+sys 58.88
+20000 elems, 512 in size, lib
+real 38.23
+user 11.04
+sys 26.52
+10000 elems, 4096 in size, sys
+real 19.30
+user 1.92
+sys 17.05
+10000 elems, 4096 in size, lib
+real 46.93
+user 5.64
+sys 38.63
+15000 elems, 4096 in size, sys
+real 43.35
+user 4.87
+sys 37.65
+15000 elems, 4096 in size, lib
+real 98.72
+user 17.46
+sys 79.50
+8000 elems, 8192in size, sys
+real 12.22
+user 1.40
+sys 10.62
+8000 elems, 8192 in size, lib
+real 29.21
+user 5.04
+sys 23.62
+12000 elems, 8192in size, sys
+real 27.73
+user 3.02
+sys 24.26
+12000 elems, 8192 in size, lib
+real 65.32
+user 11.98
+sys 52.11
+
+Powyzsze wyniki sugeruja ze dla malych rozmiarow struktor, sortowanie
+przebiega szybciej z wykorzystaniem funkcji bibliotecznych
+(zasluga buforowania) co jedna zmienia sie przy wzroscie wielkosci
+struktor, tak wiec juz dla 4096 i 8192 sytuacja wyglada juz zupelnie odwrotnie
+i to funkcje systemowe zapewniaja wieksza szybkosc.
