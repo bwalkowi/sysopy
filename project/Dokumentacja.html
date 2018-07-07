@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><!--This file was converted to xhtml by LibreOffice - see http://cgit.freedesktop.org/libreoffice/core/tree/filter/source/xslt for the code.--><head profile="http://dublincore.org/documents/dcmi-terms/"><meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/><title xml:lang="en-US">- no title specified</title><meta name="DCTERMS.title" content="" xml:lang="en-US"/><meta name="DCTERMS.language" content="en-US" scheme="DCTERMS.RFC4646"/><meta name="DCTERMS.source" content="http://xml.openoffice.org/odf2xhtml"/><meta name="DCTERMS.issued" content="2016-06-07T12:55:52.816055476" scheme="DCTERMS.W3CDTF"/><meta name="DCTERMS.modified" content="2016-06-07T14:28:55.664269008" scheme="DCTERMS.W3CDTF"/><meta name="DCTERMS.provenance" content="" xml:lang="en-US"/><meta name="DCTERMS.subject" content="," xml:lang="en-US"/><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" hreflang="en"/><link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" hreflang="en"/><link rel="schema.DCTYPE" href="http://purl.org/dc/dcmitype/" hreflang="en"/><link rel="schema.DCAM" href="http://purl.org/dc/dcam/" hreflang="en"/><style type="text/css">
+	@page {  }
+	table { border-collapse:collapse; border-spacing:0; empty-cells:show }
+	td, th { vertical-align:top; font-size:12pt;}
+	h1, h2, h3, h4, h5, h6 { clear:both }
+	ol, ul { margin:0; padding:0;}
+	li { list-style: none; margin:0; padding:0;}
+	<!-- "li span.odfLiEnd" - IE 7 issue-->
+	li span. { clear: both; line-height:0; width:0; height:0; margin:0; padding:0; }
+	span.footnodeNumber { padding-right:1em; }
+	span.annotation_style_by_filter { font-size:95%; font-family:Arial; background-color:#fff000;  margin:0; border:0; padding:0;  }
+	* { margin:0;}
+	.Header { font-size:12pt; font-family:Liberation Serif; writing-mode:page; }
+	.P1 { font-size:12pt; font-family:Liberation Serif; writing-mode:page; }
+	.P11 { font-size:18pt; font-family:Liberation Serif; writing-mode:page; font-weight:normal; }
+	.P2 { font-size:18pt; font-family:Liberation Serif; writing-mode:page; }
+	.P3 { font-size:18pt; font-family:Liberation Serif; writing-mode:page; }
+	.P4 { font-size:18pt; font-family:Liberation Serif; writing-mode:page; font-weight:normal; }
+	.P5 { font-size:26pt; font-family:Liberation Serif; writing-mode:page; font-weight:bold; }
+	.P6 { font-size:26pt; font-family:Liberation Serif; writing-mode:page; font-weight:bold; }
+	.P7 { font-size:26pt; font-family:Liberation Serif; writing-mode:page; font-weight:bold; }
+	.P8 { font-size:44pt; font-family:Liberation Serif; writing-mode:page; text-align:center ! important; }
+	.P9 { font-size:18pt; font-family:Liberation Serif; writing-mode:page; }
+	<!-- ODF styles with no properties representable as CSS -->
+	.T1 .T2 .T3 .T4 .T5  { }
+	</style></head><body dir="ltr" style="max-width:8.2681in;margin-top:0.7874in; margin-bottom:0.7874in; margin-left:0.7874in; margin-right:0.7874in; writing-mode:lr-tb; "><p class="P8">ROZPROSZONY SZEL</p><p class="P1"> </p><p class="P1"> </p><p class="P6">Koncepcja:</p><p class="P6"> </p><p class="P2"><span class="T5">a) </span>Szel klienta: <span class="T4">prosty szel, obsługuje &amp; ; | może być uruchomiony jako serwer i wysyłać polecenia deamonom. </span></p><p class="P2"> </p><p class="P2"><span class="T5">b) Deamony: wykonują komendy szela i odsyłają wynik.</span></p><p class="P2"> </p><p class="P2"> </p><p class="P7">Mechanizmy systemowe:</p><p class="P4"> </p><p class="P11">- <span class="T3">pliki/deskryptory plików: przekierowania io procesów tworzonych przez szel</span></p><p class="P4"> </p><p class="P11">- fork, exec: szel po sparsowaniu komendy tworzy procesy lub ciąg procesów (pipy) wykonujących polecenie</p><p class="P2"> </p><p class="P2">- <span class="T2">sygnały: szel blokuje część sygnałów, żeby nie skończyć się jak np. użytkownik wprowadzi ctrl+C</span></p><p class="P2"> </p><p class="P2">- <span class="T2">sockety (SOCK_STREAM): komunikacja szel-deamony</span></p><p class="P2"> </p><p class="P2"> </p><p class="P5">Uruchomienie:</p><p class="P2"> </p><p class="P2">- kompilacja: make</p><p class="P2"> </p><p class="P2">- uruchomienie szela: [path]/wsh</p><p class="P2"><span> <span class="T1">a) utworzenie serwera: mkserv [path_to_socket] [port]</span></span></p><p class="P2"><span> <span class="T1">b) usunięcie serwera: rmserv</span></span></p><p class="P9"><span> c) rozkaz dla deamonów: ords [all | num]</span></p><p class="P2"><span> </span><span> <span class="T1">all – do wszystkich</span></span></p><p class="P2"><span> </span><span> <span class="T1">num – do konkretnego</span></span></p><p class="P3"><span> <span class="T1">d) wynik rozkazu: hears [all | num]</span></span></p><p class="P3"><span> </span><span> <span class="T1">all – od wszystkich</span></span></p><p class="P3"><span> </span><span> <span class="T1">num – od konkretnego</span></span></p><p class="P3"><span> <span class="T1">e) wylistuj deamony</span></span></p><p class="P2"> </p><p class="P2">- uruchomienie deamona: [path]/deam [wariant] [options]:</p><p class="P2"><span> a) wariant: local → options: path_to_socket</span></p><p class="P2"> <span> b) wariant: remote → options: ip port</span></p><p class="P2"> </p></body></html>
